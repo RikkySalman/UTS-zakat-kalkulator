@@ -1,0 +1,175 @@
+.navbar {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: right;
+}
+
+.navbar button {
+  width: 80px;
+  margin-right: 10px;
+  background: #ffd700;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.navbar li {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(https://png.pngtree.com/thumb_back/fh260/background/20240601/pngtree-zakat-or-sadaqah-to-poor-people-islamic-concept-background-image_15846626.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: transparent;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background: #3C59A5;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: turquoise;
+}
+
+.hasil {
+  margin-top: 20px;
+  padding: 15px;
+  background: gold;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #040404;
+  font-weight: bold;
+}
+
+.hadist-box {
+    background: #fff;
+    padding: 10px;
+
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.animated-table.float {
+  animation: floatY 3.5s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+@keyframes floatY {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animated-table.slide-in {
+  animation: slideIn 0.6s cubic-bezier(.2,.9,.2,1) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+@keyframes slideIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animated-table.bounce {
+  animation: bounceIn 0.7s cubic-bezier(.2,.9,.2,1) both;
+}
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(.95) translateY(10px); }
+  60%  { opacity: 1; transform: scale(1.02) translateY(-6px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.result-table th, .result-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+}
+.result-table tr:last-child td {
+  border-bottom: none;
+}
