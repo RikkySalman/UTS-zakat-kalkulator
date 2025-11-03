@@ -23,9 +23,9 @@ menu.querySelectorAll("li").forEach(item => {
 document.getElementById("zakatForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const harta = parseFloat(document.getElementById("harta").value);
-  const hutang = parseFloat(document.getElementById("hutang").value);
-  const hargaEmas = parseFloat(document.getElementById("hargaEmas").value);
+  const harta = parseFloat(document.getElementById("harta").value.replace(/\./g, ""));
+  const hutang = parseFloat(document.getElementById("hutang").value.replace(/\./g, ""));
+  const hargaEmas = parseFloat(document.getElementById("hargaEmas").value.replace(/\./g, ""));
 
   if (isNaN(harta) || isNaN(hutang) || isNaN(hargaEmas)) {
     alert("Pastikan semua kolom diisi dengan angka yang valid.");
@@ -86,22 +86,6 @@ document.getElementById("zakatForm").addEventListener("submit", function (e) {
   }
   hasilText += argumenLogis;
 
-  hasilText += `
-    <div class="hadist-box" style="margin-top:15px; background:#fff; padding:10px; border-radius:8px;">
-      <h3>📜 Hadis Tentang Zakat</h3>
-      <p><em>
-        Rasulullah SAW bersabda:
-        "Islam dibangun atas lima perkara, yaitu bersaksi bahwa tiada Tuhan selain Allah
-        dan Muhammad adalah utusan Allah, mendirikan shalat, menunaikan zakat,
-        berpuasa di bulan Ramadan, dan menunaikan haji bagi yang mampu."
-        (HR. Bukhari dan Muslim)
-      </em></p>
-      <p><strong>Artinya:</strong>
-        Zakat adalah salah satu rukun Islam yang wajib bagi setiap muslim yang mampu,
-        untuk membersihkan harta dan membantu sesama.
-      </p>
-    </div>
-  `;
 
   hasilText += `
     <div class="logika" style="margin-top:15px; background:#f5f5f5; padding:10px; border-radius:8px;">
