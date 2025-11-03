@@ -1,0 +1,67 @@
+<html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Zakat </title>
+  <link rel="stylesheet" href="style.css.CSS" />
+</head>
+
+<div class="navbar">
+  <button id="menuButton">☰</button>
+  <ul id="menu" hidden>
+    <li>Emas</li>
+    <li>Pertanian</li>
+    <li>Penghasilan</li>
+  </ul>
+</div>
+
+<body>
+  <div class="container">
+    <h1>Kalkulator Zakat </h1>
+
+    <form id="zakatForm">
+      <label for="harta">Total Harta (Rp):</label>
+      <input type="number" id="harta" placeholder="Masukkan total harta..." required />
+
+      <label for="hutang">Total Hutang (Rp):</label>
+      <input type="number" id="hutang" placeholder="Masukkan total hutang..." required />
+
+      <label for="hargaEmas">Harga Emas per Gram (Rp):</label>
+      <input type="number" id="hargaEmas" value="2305000" required />
+
+      <button type="submit">Hitung Zakat</button>
+    </form>
+
+    <div id="hasil" class="hasil"></div>
+  </div>
+
+  <div class="container">
+    <strong><p>NIM:256512007</p>
+    <p>Nama:Rikky Salman</p>
+    <p>Semester:1</p>
+    <p>Prodi:Informatika</p>
+    <p>Dosen Pengampu:</p>
+    <p>Iin, M.Kom</p></strong>
+  </div>
+  <div class="">
+  <h3>📜 Hadis Tentang Zakat</h3>
+  <p><em>
+    Rasulullah SAW bersabda:
+    "Islam dibangun atas lima perkara, yaitu bersaksi bahwa tiada Tuhan selain Allah 
+    dan Muhammad adalah utusan Allah, mendirikan shalat, menunaikan zakat, berpuasa di bulan Ramadan, 
+    dan menunaikan haji bagi yang mampu." 
+    (HR. Bukhari dan Muslim)
+  </em></p>
+  <p><strong>Artinya:</strong> 
+    “Zakat adalah salah satu rukun Islam yang wajib bagi setiap muslim yang mampu, 
+    untuk membersihkan harta dan membantu sesama.”
+  </p>
+</div>
+
+<table class="result-tabel animated-tabel float"></table>
+
+  <script src="java.js.js"></script>
+  <script src=""></script>
+</body>
+</html>
